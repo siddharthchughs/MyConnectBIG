@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tecnest.manage.myconnectbig.EnlistActivityFragment"
+    tools:showIn="@layout/activity_enlist">
+
+       <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+           android:fadeScrollbars="true"
+
+           >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/to_text_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/clientCompanyname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter your Company Name"
+
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/clientName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Name"
+
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+
+                    >
+
+
+                    <EditText
+                        android:id="@+id/clientPhoneno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Mobile Number"
+
+                        android:inputType="text|number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/clientAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Your Company Address"
+
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+
+                    >
+
+
+                    <EditText
+                        android:id="@+id/clientEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email Address"
+
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/clientFragnance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Websitelink"
+
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                    <EditText
+                        android:id="@+id/clientRefilldate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nature Of  Your business"
+                        android:inputType="textMultiLine"                        android:maxLines="20"
+                        android:gravity="top|left"
+                        android:minLines="6"
+                        android:overScrollMode="always"
+                        android:scrollbars="vertical"
+                        >
+                        <requestFocus />
+
+                    </EditText>
+
+
+
+                <!--<Button-->
+                <!--android:id="@+id/dateSelection"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="15dp"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:padding="10dp"-->
+                <!--android:text="Select Date"-->
+                <!--android:textSize="12sp"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textAppearance="@android:style/TextAppearance.Material.Medium.Inverse"-->
+                <!--android:background="@drawable/search_bt"-->
+                <!--/>-->
+
+
+                <!--</LinearLayout>-->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyleSmallInverse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/Send"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="20dp"
+
+                    android:text="Submit"
+                    android:textSize="15sp"
+                    android:textColor="@drawable/searchtextchange"
+                    android:background="@drawable/search_bg"
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

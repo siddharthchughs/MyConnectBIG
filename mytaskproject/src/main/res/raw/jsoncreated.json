@@ -1,0 +1,61 @@
+[
+  {
+    "id":"atrid1",
+    "Name":"enrollment_process_id",
+    "Fields":{
+
+      "Attribute Type":"TextBox",
+      "Caption ID":"",
+      "Sequence in Screen":"1",
+      "Text Box Size":"0.5f",
+      "Caption Font":"Ariel",
+      "Caption Size":"10",
+      "Caption Color":"Black"
+
+    }
+
+  },
+  {
+    "id":"atrid2",
+    "Name":"course_id",
+    "Fields":{
+      "Attribute Type":"DropDown",
+      "Caption ID":"",
+      "Sequence in Screen":"1",
+      "Text Box Size":"0.5f",
+      "Caption Font":"Ariel",
+      "Caption Size":"10",
+      "Caption Color":"Black"
+    }
+
+  },
+  {
+    "id":"atrid3",
+    "Name":"full_name",
+    "Fields":{
+      "Attribute Type":"",
+      "Caption ID":"",
+      "Sequence in Screen":"",
+      "Text Box Size":"",
+      "Caption Font":"",
+      "Caption Size":"",
+      "Caption Color":""
+    }
+
+  },
+  {
+    "id":"atrid4",
+    "Name":"country",
+    "Fields":{
+      "Attribute Type":"",
+      "Caption ID":"",
+      "Sequence in Screen":"",
+      "Text Box Size":"",
+      "Caption Font":"",
+      "Caption Size":"",
+      "Caption Color":""
+    }
+
+  }
+
+]

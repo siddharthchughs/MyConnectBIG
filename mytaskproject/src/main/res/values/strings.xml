@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyTaskProject</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_camera">Camera Task</string>
+    <string name="title_activity_voice">Voice Recorder Task</string>
+    <string name="title_activity_dynamic_rawjson">DynamicRAWjsonActivity</string>
+</resources>

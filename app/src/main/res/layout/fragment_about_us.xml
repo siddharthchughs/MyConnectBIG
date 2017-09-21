@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tecnest.manage.myconnectbig.AboutUsActivityFragment"
+    tools:showIn="@layout/activity_about_us">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/phonecall"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:text="Phone Number"
+            android:textSize="18sp"
+            android:textColor="@color/ColorPrimary"
+
+            />
+
+
+        <TextView
+            android:id="@+id/client_Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/half_black"
+            android:maxLines="5"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"
+
+            />
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
