@@ -4,10 +4,10 @@
     "Name":"enrollment_process_id",
     "Fields":{
 
-      "Attribute Type":"TextBox",
+      "Attribute Type":"EditText",
       "Caption ID":"",
       "Sequence in Screen":"1",
-      "Text Box Size":"0.5f",
+      "Text Box Size":"50",
       "Caption Font":"Ariel",
       "Caption Size":"10",
       "Caption Color":"Black"
@@ -33,13 +33,14 @@
     "id":"atrid3",
     "Name":"full_name",
     "Fields":{
-      "Attribute Type":"",
+      "Attribute Type":"RadioButton",
       "Caption ID":"",
       "Sequence in Screen":"",
-      "Text Box Size":"",
+      "Text Box Size":"30",
       "Caption Font":"",
       "Caption Size":"",
-      "Caption Color":""
+      "Caption Color":"",
+      "Text":"text"
     }
 
   },

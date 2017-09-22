@@ -10,6 +10,15 @@ public class Testpojo {
     private String name;
     private String textbox;
     private String textsize;
+    private String text;
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
 
     public String getTextbox() {
         return textbox;

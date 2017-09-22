@@ -15,7 +15,7 @@
         tools:layout_editor_absoluteX="8dp">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="200dp"
             android:orientation="vertical"
             android:scrollbars="vertical"
             android:id="@+id/linearLayout"
@@ -38,6 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:scrollbars="horizontal"
             >
             <TextView
                 android:id="@+id/createTextview"
@@ -49,32 +50,34 @@
                 android:gravity="center"
 
                 />
-            <!--<RadioButton-->
-                <!--android:id="@+id/radioButton"-->
-               <!--android:layout_weight="1"-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="RadioButton" />-->
+            <RadioButton
+                android:id="@+id/radioButton"
+               android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
 
-            <!--<Spinner-->
-                <!--android:id="@+id/spinner"-->
-                <!--android:layout_weight="1"-->
-                <!--android:layout_width="0dp"-->
-                <!--android:layout_height="wrap_content"-->
-              <!--/>-->
 
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/linearLayout1"
+        <ScrollView
+            android:id="@+id/scrollForm"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
+            android:scrollbars="vertical"
             >
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+            </LinearLayout>
+
+        </ScrollView>
 
 
-
-        </LinearLayout>
 
 
     </LinearLayout>

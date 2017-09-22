@@ -7,15 +7,89 @@
     tools:context="tecnest.manage.mytaskproject.DynamicRAWjsonActivityFragment"
     tools:showIn="@layout/activity_dynamic_rawjson">
 
-
-    <android.support.v7.widget.LinearLayoutCompat
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="395dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        >
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            android:id="@+id/linearLayout"
+>
 
 
-    </android.support.v7.widget.LinearLayoutCompat>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:paddingTop="20dp"
+                android:textSize="13sp"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:scrollbars="horizontal"
+            >
+            <TextView
+                android:id="@+id/createTextview"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:text="Create"
+                android:gravity="center"
+
+                />
+            <RadioButton
+                android:id="@+id/radioButton"
+               android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Button"
+                android:id="@+id/button"
+                />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollForm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+    </LinearLayout>
+
 
 
 </android.support.constraint.ConstraintLayout>

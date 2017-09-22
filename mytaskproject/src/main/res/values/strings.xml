@@ -4,4 +4,15 @@
     <string name="title_activity_camera">Camera Task</string>
     <string name="title_activity_voice">Voice Recorder Task</string>
     <string name="title_activity_dynamic_rawjson">DynamicRAWjsonActivity</string>
+
+    <string-array name="country_arrays">
+        <item>Malaysia</item>
+        <item>United States</item>
+        <item>Indonesia</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Singapore</item>
+        <item>New Zealand</item>
+        <item>India</item>
+    </string-array>
 </resources>
