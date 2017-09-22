@@ -1,13 +1,18 @@
 package tecnest.manage.mytaskproject;
 
+import android.*;
+import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +26,10 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
+import static android.Manifest.permission.CALL_PHONE;
+import static android.Manifest.permission.READ_PHONE_STATE;
+import static android.Manifest.permission.RECORD_AUDIO;
+import static android.Manifest.permission.WRITE_EXTERNAL_STORAGE;
 import static android.app.Activity.RESULT_OK;
 
 /**
@@ -31,6 +40,8 @@ public class CameraActivityFragment extends Fragment {
     Button chooseImg, uploadImg;
     ImageView imgView;
     int PICK_IMAGE_REQUEST = 111;
+    public static final int RequestPermissionCode = 1;
+
     Uri filePath;
     ProgressDialog pd;
 
@@ -46,6 +57,10 @@ public class CameraActivityFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View v = inflater.inflate(R.layout.fragment_camera, container, false);
+        if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE
+        ) != PackageManager.PERMISSION_GRANTED) {
+            requestPermission();
+        }
 
         chooseImg = (Button)v.findViewById(R.id.chooseImg);
         uploadImg = (Button)v.findViewById(R.id.uploadImg);
@@ -116,4 +131,43 @@ public class CameraActivityFragment extends Fragment {
             }
         }
     }
+    private void requestPermission() {
+        ActivityCompat.requestPermissions(getActivity(), new
+                String[]{WRITE_EXTERNAL_STORAGE}, RequestPermissionCode);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode,
+                                           String permissions[], int[] grantResults) {
+        switch (requestCode) {
+            case RequestPermissionCode:
+                if (grantResults.length> 0) {
+                    boolean StoragePermission = grantResults[0] ==
+                            PackageManager.PERMISSION_GRANTED;
+//                    boolean RecordPermission = grantResults[1] ==
+//                            PackageManager.PERMISSION_GRANTED;
+//
+//                    boolean ReadyPhone = grantResults[2] ==
+//                            PackageManager.PERMISSION_GRANTED;
+//                    boolean Call_Phone = grantResults[3] ==
+//                            PackageManager.PERMISSION_GRANTED;
+                    if (StoragePermission) {
+                        Toast.makeText(getActivity(), "Permission Granted",
+                                Toast.LENGTH_LONG).show();
+                    } else {
+                        Toast.makeText(getActivity(),"Permission Denied",Toast.LENGTH_LONG).show();
+                    }
+                }
+                break;
+        }
+    }
+
+    public boolean checkPermission() {
+        int result = ContextCompat.checkSelfPermission(getContext(),
+                WRITE_EXTERNAL_STORAGE);
+
+
+        return result == PackageManager.PERMISSION_GRANTED;
+    }
+
 }
